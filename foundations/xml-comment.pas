@@ -1,8 +1,8 @@
 program XMLtest;
 var
-       ret: String;	
+       ret: string;	
 
-function hey(name: String): String;
+function hey(name: string): string;
 /// <summary>a function to return a greeting message with name</summary>
 begin
 	hey := 'Hey, ' + name + '!';
