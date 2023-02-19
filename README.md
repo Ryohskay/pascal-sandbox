@@ -3,3 +3,6 @@ The code here is based on Marco Cantù "Object Pascal Handbook" Delphi 11 Alexsa
 
 ## Language version
 The compiler is `fpc 3.2.2`.
+
+## Compilation
+When compiling, use `fpc ./hello.pas -FE./out/`.
