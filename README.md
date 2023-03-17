@@ -12,6 +12,8 @@ However, `string` is a reserved word, so it must be all in lower letters.
 Numeric separator, such as `10_000_000` is not yet available in fpc 3.2.\*.
 It would be available after 3.3.\* release in the future, with `{$modeswitch underscoreisseparator}` compiler directive.
 
+For Decimal Separators (the division marker used when printing the value), see [DecimalSeparator Documentation](https://wiki.freepascal.org/DecimalSeparator) 
+
 ### Inline variables
 Apparently, inline variables are not available in fpc.
 
