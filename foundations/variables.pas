@@ -4,20 +4,20 @@ program variables;
 uses SysUtils;
 
 var
-	num: Integer = 20;
+	Num: Integer = 20;
 	{ special global assignment available, used only 
 	because global variable will automatically initialised with a default value anyway }
-	prefix: string;
-	msg: string;
+	Prefix: string;
+	Msg: string;
 	IsCorrect: Boolean;
 
 begin
-	num := $1a;  { hex integer }
-	num := %10;  { binary integer }
-	prefix := 'The author''s name';  { doubling quotes escapes the quote character }
+	Num := $1a;  { hex integer }
+	Num := %10;  { binary integer }
+	Prefix := 'The author''s name';  { doubling quotes escapes the quote character }
 	{ sys constant sLineBreak is system-dependent newline char }
-	msg := prefix + sLineBreak + 'Marco Cantu''';
+	Msg := prefix + sLineBreak + 'Marco Cantu''';
 	IsCorrect := True;
-	WriteLn(msg);
-	WriteLn(IntToStr(num));
+	WriteLn(Msg);
+	WriteLn(IntToStr(Num));
 end.

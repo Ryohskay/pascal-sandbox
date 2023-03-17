@@ -12,6 +12,9 @@ However, `string` is a reserved word, so it must be all in lower letters.
 Numeric separator, such as `10_000_000` is not yet available in fpc 3.2.\*.
 It would be available after 3.3.\* release in the future, with `{$modeswitch underscoreisseparator}` compiler directive.
 
+### Inline variables
+Apparently, inline variables are not available in fpc.
+
 ## Compilation
 When compiling, use `fpc ./hello.pas -FE./out/`.
 
