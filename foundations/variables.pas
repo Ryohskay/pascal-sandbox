@@ -1,6 +1,8 @@
 program variables;
 {$mode fpc}
 
+uses SysUtils;
+
 var
 	num: Integer = 20;
 	{ special global assignment available, used only 
@@ -17,4 +19,5 @@ begin
 	msg := prefix + sLineBreak + 'Marco Cantu''';
 	IsCorrect := True;
 	WriteLn(msg);
+	WriteLn(IntToStr(num));
 end.
