@@ -10,6 +10,7 @@ var
 	Prefix: string;
 	Msg: string;
 	IsCorrect: Boolean;
+	Ate: char;
 
 begin
 	Num := $1a;  { hex integer }
@@ -20,4 +21,6 @@ begin
 	IsCorrect := True;
 	WriteLn(Msg);
 	WriteLn(IntToStr(Num));
+	Ate := #65;  { Unicode code point, but char only accepts ASCII chars? }
+	WriteLn(Ate);
 end.
