@@ -1,4 +1,5 @@
 program variables;
+{$mode fpc}
 
 var
 	num: Integer;

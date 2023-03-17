@@ -8,6 +8,10 @@ The compiler is `fpc 3.2.2`.
 Type names such as `Integer` are just identifiers, so the first letter should be capitalised.
 However, `string` is a reserved word, so it must be all in lower letters.
 
+### Numeric separator
+Numeric separator, such as `10_000_000` is not yet available in fpc 3.2.\*.
+It would be available after 3.3.\* release in the future, with `{$modeswitch underscoreisseparator}` compiler directive.
+
 ## Compilation
 When compiling, use `fpc ./hello.pas -FE./out/`.
 
