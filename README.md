@@ -21,6 +21,9 @@ Apparently, inline variables are not available in fpc.
 The book suggests `ToString()` method on Integer, but I believe it is not available in fpc-Pascal.
 It is instead available as a utility function `IntToString()`.
 
+#### Type inference
+Type inference is not available in current fpc. I think I've read it's coming in the next release of fpc...
+
 ## Compilation
 When compiling, use `fpc ./hello.pas -FE./out/`.
 

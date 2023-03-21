@@ -22,5 +22,6 @@ begin
 	WriteLn(Msg);
 	WriteLn(IntToStr(Num));
 	Ate := #65;  { Unicode code point, but char only accepts ASCII chars? }
+	var Number := 22;
 	WriteLn(Ate);
 end.
