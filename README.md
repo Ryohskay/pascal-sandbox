@@ -17,6 +17,10 @@ For Decimal Separators (the division marker used when printing the value), see [
 ### Inline variables
 Apparently, inline variables are not available in fpc.
 
+### Type casting
+The book suggests `ToString()` method on Integer, but I believe it is not available in fpc-Pascal.
+It is instead available as a utility function `IntToString()`.
+
 ## Compilation
 When compiling, use `fpc ./hello.pas -FE./out/`.
 
