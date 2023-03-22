@@ -31,6 +31,13 @@ When compiling, use `fpc ./hello.pas -Crio -FE./out/`.
 Out of range operation triggers a compilation error in Delphi, but it only invokes a warning in fpc.
 **In order to enforce such out-of-range operation to cause error, use** `-Crio` compiler options.
 
+#### Documentation issue?
+According to [this page on FPC wiki](https://wiki.freepascal.org/local_compiler_directives#$R_versus_$Q),
+it reads as if there is no practical difference between `$R` (`$rangeChecks`) and `$Q` (`$overflowChecks`):
+
+However, when compiling out_of_range.pas, `$R` **DOES** produces an error and stops compilation,
+but `$Q` just produces a warning. Try to use `$R` direcrives when writing them in your codes.
+
 ### Apptype
 The AppType directive (`{$APPTYPE ...}`) is only meaningful on Win32, Mac, OS2 and AmigaOS ([See documentation](https://www.freepascal.org/docs-html/current/prog/progsu86.html)). On any other systems (e.g. Linux, Windows 11, OpenBSD), the directive will be simply ignored.
 

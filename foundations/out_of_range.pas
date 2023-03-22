@@ -1,4 +1,5 @@
 program outofrange;
+{$RANGECHECKS ON}
 
 var
 	M: UInt16;
