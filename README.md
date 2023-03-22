@@ -25,10 +25,11 @@ It is instead available as a utility function `IntToString()`.
 Type inference is not available in current fpc. I think I've read it's coming in the next release of fpc...
 
 ## Compilation
-When compiling, use `fpc ./hello.pas -FE./out/`.
+When compiling, use `fpc ./hello.pas -Crio -FE./out/`.
 
 ### Out of Range
 Out of range operation triggers a compilation error in Delphi, but it only invokes a warning in fpc.
+**In order to enforce such out-of-range operation to cause error, use** `-Crio` compiler options.
 
 ### Apptype
 The AppType directive (`{$APPTYPE ...}`) is only meaningful on Win32, Mac, OS2 and AmigaOS ([See documentation](https://www.freepascal.org/docs-html/current/prog/progsu86.html)). On any other systems (e.g. Linux, Windows 11, OpenBSD), the directive will be simply ignored.
