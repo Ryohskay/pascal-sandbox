@@ -1,9 +1,15 @@
 program outofrange;
 
 var
-	N: Integer;
+	M: UInt16;
+	N: UInt16;
 
 begin
-	N := 100 + High(N);
+	M := 0;
+	M := 100 + High(M);  {This invokes compiler warning}
+	WriteLn(M);
+	{ Following does not trigger compile time warning }
+	N := 0;
+	Inc(N, High(N));
 	WriteLn(N);
 end.
