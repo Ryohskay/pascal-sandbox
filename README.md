@@ -4,6 +4,9 @@ The code here is based on Marco Cantù "Object Pascal Handbook" Delphi 11 Alexsa
 ## Language version
 The compiler is `fpc 3.2.2`.
 
+## Good guide
+- [Do's and Dont's of Pascal programming - FPC wiki](https://wiki.freepascal.org/DoDont)
+
 ## Type notation
 Type names such as `Integer` are just identifiers, so the first letter should be capitalised.
 However, `string` is a reserved word, so it must be all in lower letters.
