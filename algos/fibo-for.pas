@@ -18,7 +18,16 @@ begin
 	M := 1;
 	WriteLn(F[M-1]);
 
-	for N := 2 to 49 do
-		F[N] := F[N-1] + F[N-2];
+	for N := Low(F) to High(F) do
+		if N = 0 then
+			F[N] := 0
+		else if N = 1 then
+			F[N] := 1
+		else
+			begin
+				Num1 := N-1;
+				Num2 := N-2;
+				F[N] := F[Num1] + F[Num2];
+			end;
 		WriteLn(F[N]);
 end.
