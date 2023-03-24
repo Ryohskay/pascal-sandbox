@@ -4,7 +4,7 @@ program fibo_for;
 uses SysUtils;
 
 type
-	TFiboIdx = 0..10;
+	TFiboIdx = 0..50;
 
 var
 	F: array of Integer;
@@ -12,7 +12,7 @@ var
 	M, Num1, Num2: Integer;
 
 begin
-	SetLength(F, 10);
+	SetLength(F, 50);
 	F[0] := 0;
 	F[1] := 1;
 	M := 1;
