@@ -1,4 +1,5 @@
 program fibo_for;
+{$mode objfpc}
 { Calculate the fibonacci sequence using only for loop and array }
 
 uses SysUtils;
