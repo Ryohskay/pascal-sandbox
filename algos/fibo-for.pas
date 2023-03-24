@@ -18,7 +18,7 @@ begin
 	M := 1;
 	WriteLn(F[M-1]);
 
-	for N := Low(F) to High(F) do
+	for N := Low(F) to High(F)-1 do
 		if N = 0 then
 			F[N] := 0
 		else if N = 1 then
