@@ -19,11 +19,12 @@ begin
 	WriteLn(F[M-1]);
 
 	N := 2;
-	while N < 49 do
+	repeat
 		WriteLn(N);
 		Num1 := F[N-1];
 		Num2 := F[N-2];
 		F[N] := Num1 + Num2;
 		WriteLn(F[N]);
 		Inc(N, 50);
+	until N >= 49;
 end.
