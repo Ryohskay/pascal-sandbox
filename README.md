@@ -41,13 +41,9 @@ it reads as if there is no practical difference between `$R` (`$rangeChecks`) an
 However, when compiling out_of_range.pas, `$R` **DOES** produces an error and stops compilation,
 but `$Q` just produces a warning. Try to use `$R` direcrives when writing them in your codes.
 
-### Too extreme compiler optimisation?
-Using `Array[N] := Array[N-1] + Array[N-2]` in a `for` or `while` loop breaks and never runs properly. 
-
-This seems to me something due to compile-time substitution of operations like `[N-1]`.
-I believe recursive expression is required to let this work. 
-
-This is a bit confusing as those optimisation-related restriction should not prevent users from writing in a polimolphoric way.
+### Notice
+Default `Integer` is a type alias to signed 32-bit integer type, which the fibonacci sequence's 47th term exceeds.
+The type must be Int64.
 
 ### Apptype
 The AppType directive (`{$APPTYPE ...}`) is only meaningful on Win32, Mac, OS2 and AmigaOS ([See documentation](https://www.freepascal.org/docs-html/current/prog/progsu86.html)). On any other systems (e.g. Linux, Windows 11, OpenBSD), the directive will be simply ignored.
