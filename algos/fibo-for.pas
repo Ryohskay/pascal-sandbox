@@ -4,27 +4,21 @@ program fibo_for;
 uses SysUtils;
 
 type
-	TArrFibo = array[0..49] of Integer;
 	TFiboIdx = 0..49;
 
 var
-	F: TArrFibo;
+	F: array of Integer;
 	N: TFiboIdx;
 	M, Num1, Num2: Integer;
 
 begin
+	SetLength(F, 50);
 	F[0] := 0;
 	F[1] := 1;
 	M := 1;
 	WriteLn(F[M-1]);
 
-	N := 2;
-	repeat
-		WriteLn(N);
-		Num1 := F[N-1];
-		Num2 := F[N-2];
-		F[N] := Num1 + Num2;
+	for N := 2 to 49 do
+		F[N] := F[N-1] + F[N-2];
 		WriteLn(F[N]);
-		Inc(N, 50);
-	until N >= 49;
 end.
