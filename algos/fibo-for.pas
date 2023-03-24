@@ -9,14 +9,12 @@ type
 var
 	F: array of Integer;
 	N: TFiboIdx;
-	M, Num1, Num2: Integer;
+	Num1, Num2: Integer;
 
 begin
 	SetLength(F, 50);
 	F[0] := 0;
 	F[1] := 1;
-	M := 1;
-	WriteLn(F[M-1]);
 
 	for N := Low(F) to High(F) do
 		WriteLn(IntToStr(N) + 'th term is processed;');
