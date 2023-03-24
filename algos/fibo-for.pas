@@ -19,6 +19,7 @@ begin
 	WriteLn(F[M-1]);
 
 	for N := Low(F) to High(F)-1 do
+		WriteLn(IntToStr(N) + 'th term is processed;');
 		if N = 0 then
 			F[N] := 0
 		else if N = 1 then
