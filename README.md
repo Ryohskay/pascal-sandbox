@@ -17,6 +17,9 @@ It would be available after 3.3.\* release in the future, with `{$modeswitch und
 
 For Decimal Separators (the division marker used when printing the value), see [DecimalSeparator Documentation](https://wiki.freepascal.org/DecimalSeparator) 
 
+### Result
+The `Result` keyword to store the value to be returned in a function is only available with fpc compatibility mode `objfpc` or `delphi`.
+
 ### Inline variables
 Apparently, inline variables are not available in fpc.
 
